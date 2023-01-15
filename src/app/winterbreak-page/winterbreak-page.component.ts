@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { formatseconds } from '../utilities';
 
 @Component({
   selector: 'app-winterbreak-page',
@@ -32,23 +33,6 @@ export class WinterbreakPageComponent {
     this.hoursLeft = ~~(this.minutesLeft / 60);
     this.daysLeft = ~~(this.hoursLeft / 24);
     this.weeksLeft = ~~(this.daysLeft / 7);
-    this.secondsLeftShow = this.formatseconds(this.secondsLeft);
-
+    this.secondsLeftShow = formatseconds(this.secondsLeft);
   }
-
-  formatseconds(input: number): string {
-    let stringinput: string = input.toString();
-    let decimalpart: string = stringinput.split(".")[1];
-    if (decimalpart.length === 0) {
-      stringinput += "000";
-    }
-    else if (decimalpart.length === 1) {
-      stringinput += "00";
-    }
-    else if (decimalpart.length === 2) {
-      stringinput += "0";
-    }
-    return stringinput;
-  }
-
 }
