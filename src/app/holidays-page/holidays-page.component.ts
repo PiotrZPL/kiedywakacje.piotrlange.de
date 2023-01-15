@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-days-to-it',
-  templateUrl: './days-to-it.component.html',
-  styleUrls: ['./days-to-it.component.scss']
+  templateUrl: './holidays-page.component.html',
+  styleUrls: ['./holidays-page.component.scss']
 })
-export class DaysToItComponent {
+export class HolidaysPageComponent {
   holidayDate = new Date(2023, 5, 23, 0, 0, 0, 0);
   schoolYearStartDate = new Date(2022, 8, 1, 0, 0, 0, 0);
   nowDate: number = 0;

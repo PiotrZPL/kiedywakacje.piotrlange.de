@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WinterbreakPageComponent } from "./winterbreak-page";
-import { DaysToItComponent } from './days-to-it';
+import { HolidaysPageComponent } from './holidays-page';
 import { MainPageComponent } from './main-page';
 
 const routes: Routes = [
   { path: "", component: MainPageComponent },
-  { path: "holidays", component: DaysToItComponent },
+  { path: "holidays", component: HolidaysPageComponent },
   { path: "winterbreak", component: WinterbreakPageComponent },
   { path: "**", redirectTo: "" }
 ];
