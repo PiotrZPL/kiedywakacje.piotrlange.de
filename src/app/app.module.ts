@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HolidaysPageComponent } from './holidays-page/holidays-page.component';
 import { WinterbreakPageComponent } from './winterbreak-page/winterbreak-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { StandardCountdownComponent } from './standard-countdown/standard-countdown.component';
+import { ChristmasPageComponent } from './christmas-page/christmas-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HolidaysPageComponent,
     WinterbreakPageComponent,
-    MainPageComponent
+    MainPageComponent,
+    StandardCountdownComponent,
+    ChristmasPageComponent
   ],
   imports: [
     BrowserModule,
