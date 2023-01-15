@@ -17,6 +17,7 @@ export class DaysToItComponent {
   daysLeft: number = 0;
   weeksLeft: number = 0;
   percentLeft: number = 0;
+  secondsLeftShow: string = "0";
 
 
   constructor() {
@@ -36,7 +37,23 @@ export class DaysToItComponent {
     this.daysLeft = ~~(this.hoursLeft / 24);
     this.weeksLeft = ~~(this.daysLeft / 7);
     this.percentLeft = Math.round((this.timeLeft / this.totalSchoolYearTime) * 1000000)/10000;
+    this.secondsLeftShow = this.formatseconds(this.secondsLeft);
 
+  }
+
+  formatseconds(input: number): string {
+    let stringinput: string = input.toString();
+    let decimalpart: string = stringinput.split(".")[1];
+    if (decimalpart.length === 0) {
+      stringinput += "000";
+    }
+    else if (decimalpart.length === 1) {
+      stringinput += "00";
+    }
+    else if (decimalpart.length === 2) {
+      stringinput += "0";
+    }
+    return stringinput;
   }
 
 }
