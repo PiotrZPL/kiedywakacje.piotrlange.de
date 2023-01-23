@@ -10,6 +10,7 @@ import { StandardCountdownComponent } from './standard-countdown/standard-countd
 import { ChristmasPageComponent } from './christmas-page/christmas-page.component';
 import { EasterPageComponent } from './easter-page/easter-page.component';
 import { MayPageComponent } from './may-page/may-page.component';
+import { NewYearPageComponent } from './new-year-page/new-year-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MayPageComponent } from './may-page/may-page.component';
     StandardCountdownComponent,
     ChristmasPageComponent,
     EasterPageComponent,
-    MayPageComponent
+    MayPageComponent,
+    NewYearPageComponent
   ],
   imports: [
     BrowserModule,
