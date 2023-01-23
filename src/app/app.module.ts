@@ -8,6 +8,7 @@ import { WinterbreakPageComponent } from './winterbreak-page/winterbreak-page.co
 import { MainPageComponent } from './main-page/main-page.component';
 import { StandardCountdownComponent } from './standard-countdown/standard-countdown.component';
 import { ChristmasPageComponent } from './christmas-page/christmas-page.component';
+import { EasterPageComponent } from './easter-page/easter-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChristmasPageComponent } from './christmas-page/christmas-page.componen
     WinterbreakPageComponent,
     MainPageComponent,
     StandardCountdownComponent,
-    ChristmasPageComponent
+    ChristmasPageComponent,
+    EasterPageComponent
   ],
   imports: [
     BrowserModule,
