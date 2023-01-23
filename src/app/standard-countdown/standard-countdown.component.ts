@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { formatseconds } from '../utilities';
+import { formatweeks } from '../utilities';
 
 @Component({
   selector: 'app-standard-countdown',
@@ -15,6 +16,7 @@ export class StandardCountdownComponent {
   daysLeft: number = 0;
   weeksLeft: number = 0;
   secondsLeftShow: string = "0";
+  weeksWord: string = "";
   @Input() countdownDate: Date = new Date();
 
   constructor() {
@@ -33,5 +35,7 @@ export class StandardCountdownComponent {
     this.daysLeft = ~~(this.hoursLeft / 24);
     this.weeksLeft = ~~(this.daysLeft / 7);
     this.secondsLeftShow = formatseconds(this.secondsLeft);
+
+    this.weeksWord = formatweeks(this.weeksLeft);
   }
 }
