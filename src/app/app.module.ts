@@ -9,6 +9,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { StandardCountdownComponent } from './standard-countdown/standard-countdown.component';
 import { ChristmasPageComponent } from './christmas-page/christmas-page.component';
 import { EasterPageComponent } from './easter-page/easter-page.component';
+import { MayPageComponent } from './may-page/may-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EasterPageComponent } from './easter-page/easter-page.component';
     MainPageComponent,
     StandardCountdownComponent,
     ChristmasPageComponent,
-    EasterPageComponent
+    EasterPageComponent,
+    MayPageComponent
   ],
   imports: [
     BrowserModule,
