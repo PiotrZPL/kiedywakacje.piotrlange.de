@@ -11,6 +11,7 @@ import { ChristmasPageComponent } from './christmas-page/christmas-page.componen
 import { EasterPageComponent } from './easter-page/easter-page.component';
 import { MayPageComponent } from './may-page/may-page.component';
 import { NewYearPageComponent } from './new-year-page/new-year-page.component';
+import { QuickHolidaysPageComponent } from './quick-holidays-page/quick-holidays-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NewYearPageComponent } from './new-year-page/new-year-page.component';
     ChristmasPageComponent,
     EasterPageComponent,
     MayPageComponent,
-    NewYearPageComponent
+    NewYearPageComponent,
+    QuickHolidaysPageComponent
   ],
   imports: [
     BrowserModule,

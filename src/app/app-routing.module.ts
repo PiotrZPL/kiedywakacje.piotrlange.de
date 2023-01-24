@@ -7,6 +7,7 @@ import { ChristmasPageComponent } from './christmas-page';
 import { EasterPageComponent } from './easter-page/';
 import { MayPageComponent } from './may-page';
 import { NewYearPageComponent } from './new-year-page';
+import { QuickHolidaysPageComponent } from './quick-holidays-page';
 
 const routes: Routes = [
   { path: "", component: MainPageComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: "easter", component: EasterPageComponent },
   { path: "maybreak", component: MayPageComponent },
   { path: "newyear", component: NewYearPageComponent },
+  { path: "quickholidays", component: QuickHolidaysPageComponent },
   { path: "**", redirectTo: "" }
 ];
 
