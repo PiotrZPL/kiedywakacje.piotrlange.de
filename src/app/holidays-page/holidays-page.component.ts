@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { formatseconds } from '../utilities';
-import { formatweeks } from '../utilities';
+import { formatdaysword, formathoursword, formatminutesword, formatseconds } from '../utilities';
+import { formatweeksword } from '../utilities';
 
 @Component({
   selector: 'app-days-to-it',
@@ -22,6 +22,9 @@ export class HolidaysPageComponent {
   secondsLeftShow: string = "0";
 
   weeksWord: string = "";
+  daysWord: string = "";
+  hoursWord: string = "";
+  minutesWord: string = "";
 
   constructor() {
     setInterval(() => 
@@ -42,6 +45,9 @@ export class HolidaysPageComponent {
     this.percentLeft = Math.round((this.timeLeft / this.totalSchoolYearTime) * 1000000)/10000;
     this.secondsLeftShow = formatseconds(this.secondsLeft);
 
-    this.weeksWord = formatweeks(this.weeksLeft);
+    this.weeksWord = formatweeksword(this.weeksLeft);
+    this.daysWord = formatdaysword(this.daysLeft);
+    this.hoursWord = formathoursword(this.hoursLeft);
+    this.minutesWord = formatminutesword(this.minutesLeft);
   }
 }
