@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./may-page.component.scss']
 })
 export class MayPageComponent {
-  mayBreakDate: Date[] = [new Date(2023, 3, 29, 0, 0, 0, 0)]
+  mayBreakDate: Date = new Date(2023, 3, 29, 0, 0, 0, 0)
 
 }

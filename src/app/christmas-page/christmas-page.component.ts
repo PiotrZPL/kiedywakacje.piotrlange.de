@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ChristmasPageComponent {
   nowDate: Date = new Date();
-  christmasDate: Date[] = []
+  christmasDate: Date = new Date()
 
   constructor() {
     setInterval(() => 
@@ -18,6 +18,6 @@ export class ChristmasPageComponent {
 
   recalculateValues() {
     this.nowDate = new Date();
-    this.christmasDate = [new Date(this.nowDate.getFullYear(), 11, 23)];
+    this.christmasDate = new Date(this.nowDate.getFullYear(), 11, 23);
   }
 }

@@ -20,8 +20,7 @@ export class StandardCountdownComponent {
   daysWord: string = "";
   hoursWord: string = "";
   minutesWord: string = "";
-  @Input() countdownDateList: Date[] = [new Date()];
-  countdownDate: Date = new Date();
+  @Input() countdownDate: Date = new Date();
 
   constructor() {
     setInterval(() => 
@@ -32,14 +31,6 @@ export class StandardCountdownComponent {
 
   recalculateValues() {
     this.nowDate = Date.now();
-
-    for (let date of this.countdownDateList) {
-      if (date.getTime() - this.nowDate > 0) {
-        this.countdownDate = date;
-        break;
-      }
-    }
-
     this.timeLeft = this.countdownDate.getTime() - this.nowDate;
     this.secondsLeft = (this.timeLeft) / 1000;
     this.minutesLeft = ~~(this.secondsLeft / 60);

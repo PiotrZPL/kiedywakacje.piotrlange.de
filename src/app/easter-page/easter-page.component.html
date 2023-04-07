@@ -1,2 +1,2 @@
-<h1 class="text-4xl text-center font-bold my-6">Przerwa Wielkanocna 2023 za:</h1>
-<app-standard-countdown [countdownDateList]="easterDate" ></app-standard-countdown>
+<h1 class="text-4xl text-center font-bold my-6">Przerwa Wielkanocna {{ easterDate.getFullYear() }} za:</h1>
+<app-standard-countdown [countdownDate]="easterDate" ></app-standard-countdown>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { getNearestEaster } from '../easter-page/nearest-easter';
 
 @Component({
   selector: 'app-main-page',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent {
+  easterYear: String = getNearestEaster().getFullYear().toString();
 
 }

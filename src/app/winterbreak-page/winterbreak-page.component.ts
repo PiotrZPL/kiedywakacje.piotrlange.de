@@ -7,5 +7,5 @@ import { formatseconds } from '../utilities';
   styleUrls: ['./winterbreak-page.component.scss']
 })
 export class WinterbreakPageComponent {
-  winterBreakDate = [new Date(2024, 0, 29, 0, 0, 0, 0)];
+  winterBreakDate = new Date(2024, 0, 29, 0, 0, 0, 0);
 }
