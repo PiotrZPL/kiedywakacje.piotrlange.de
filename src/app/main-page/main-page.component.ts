@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { getNearestEaster } from '../easter-page/nearest-easter';
+import { getNearestChristmas } from '../christmas-page/nearest-christmas';
 
 @Component({
   selector: 'app-main-page',
@@ -8,5 +9,6 @@ import { getNearestEaster } from '../easter-page/nearest-easter';
 })
 export class MainPageComponent {
   easterYear: String = getNearestEaster().getFullYear().toString();
+  christmasYear: String = getNearestChristmas().getFullYear().toString();
 
 }

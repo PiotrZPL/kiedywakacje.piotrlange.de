@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { getNearestChristmas } from './nearest-christmas';
 
 @Component({
   selector: 'app-christmas-page',
@@ -6,8 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./christmas-page.component.scss']
 })
 export class ChristmasPageComponent {
-  nowDate: Date = new Date();
-  christmasDate: Date = new Date()
+  christmasDate: Date = getNearestChristmas()
 
   constructor() {
     setInterval(() => 
@@ -17,7 +17,6 @@ export class ChristmasPageComponent {
   }
 
   recalculateValues() {
-    this.nowDate = new Date();
-    this.christmasDate = new Date(this.nowDate.getFullYear(), 11, 23);
+    this.christmasDate = getNearestChristmas();
   }
 }
