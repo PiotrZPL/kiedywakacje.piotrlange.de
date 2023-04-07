@@ -6,6 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./christmas-page.component.scss']
 })
 export class ChristmasPageComponent {
-  christmasDate: Date = new Date(2023, 11, 23, 0, 0, 0, 0)
+  nowDate: Date = new Date();
+  christmasDate: Date[] = []
 
+  constructor() {
+    setInterval(() => 
+      this.recalculateValues(),
+      1
+    )
+  }
+
+  recalculateValues() {
+    this.nowDate = new Date();
+    this.christmasDate = [new Date(this.nowDate.getFullYear(), 11, 23)];
+  }
 }
