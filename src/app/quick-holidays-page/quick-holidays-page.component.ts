@@ -8,8 +8,8 @@ import { formatseconds } from '../utilities';
   styleUrls: ['./quick-holidays-page.component.scss']
 })
 export class QuickHolidaysPageComponent {
-  holidayDate = new Date(2023, 3, 28, 0, 0, 0, 0);
-  schoolYearStartDate = new Date(2022, 8, 1, 0, 0, 0, 0);
+  holidayDate = new Date(2024, 3, 26, 0, 0, 0, 0);
+  schoolYearStartDate = new Date(2023, 8, 4, 0, 0, 0, 0);
   nowDate: number = 0;
   totalSchoolYearTime: number = 0;
   timeLeft: number = 0;

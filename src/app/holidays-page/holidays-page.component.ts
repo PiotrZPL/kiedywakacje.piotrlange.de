@@ -8,8 +8,8 @@ import { formatweeksword } from '../utilities';
   styleUrls: ['./holidays-page.component.scss']
 })
 export class HolidaysPageComponent {
-  holidayDate = new Date(2023, 5, 23, 0, 0, 0, 0);
-  schoolYearStartDate = new Date(2022, 8, 1, 0, 0, 0, 0);
+  holidayDate = new Date(2024, 5, 21, 0, 0, 0, 0);
+  schoolYearStartDate = new Date(2023, 8, 4, 0, 0, 0, 0);
   nowDate: number = 0;
   totalSchoolYearTime: number = 0;
   timeLeft: number = 0;
